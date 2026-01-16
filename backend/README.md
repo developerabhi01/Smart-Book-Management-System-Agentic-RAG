@@ -1,5 +1,3 @@
-# Smart-Book-Management-System-Agentic-RAG
-Smart-Book-Management-System-Agentic-RAG using Lang graph
 # 📚 Smart Book Management System — Agentic RAG (Production Grade)
 
 A **production-ready intelligent book management platform** built with **FastAPI**, **Async SQLAlchemy**, and a **Retrieval-Augmented Generation (RAG)** pipeline.  
@@ -78,42 +76,53 @@ Copy code
 
 ## 🔗 API Overview
 
-API Overview
-🔐 Authentication
-* POST /auth/signup
-* POST /auth/login
-* POST /auth/logout
-* POST /auth/create-admin
+### 🔐 Authentication
+| Method | Endpoint |
+|------|---------|
+| POST | `/auth/signup` |
+| POST | `/auth/login` |
+| POST | `/auth/logout` |
+| POST | `/auth/create-admin` |
 
-📚 Books
-* POST /books
-* GET /books
-* GET /books/{id}
-* PUT /books/{id}
-* DELETE /books/{id}
-* POST /books/{id}/generate-summary
+### 📚 Books
+| Method | Endpoint |
+|------|---------|
+| POST | `/books` |
+| GET | `/books` |
+| GET | `/books/{id}` |
+| PUT | `/books/{id}` |
+| DELETE | `/books/{id}` |
+| POST | `/books/{id}/generate-summary` |
 
-⭐ Reviews
-* POST /books/{id}/reviews
-* GET /books/{id}/reviews
+### ⭐ Reviews
+| Method | Endpoint |
+|------|---------|
+| POST | `/books/{id}/reviews` |
+| GET | `/books/{id}/reviews` |
 
-🔍 Search (RAG)
-* GET / POST /search
-* POST /reindex-all
-* GET /debug/embeddings
+### 🔍 Search (RAG)
+| Method | Endpoint |
+|------|---------|
+| GET / POST | `/search` |
+| POST | `/reindex-all` |
+| GET | `/debug/embeddings` |
 
-👥 Admin (RBAC)
-* GET /admin/users
-* POST /admin/users
-* PUT /admin/users/{id}
-* DELETE /admin/users/{id}
-* GET /admin/roles
+### 👥 Admin (RBAC)
+| Method | Endpoint |
+|------|---------|
+| GET | `/admin/users` |
+| POST | `/admin/users` |
+| PUT | `/admin/users/{id}` |
+| DELETE | `/admin/users/{id}` |
+| GET | `/admin/roles` |
 
-📄 Documents
-* POST /documents/upload
-* GET /documents
-* GET /documents/{id}/download
-* DELETE /documents/{id}
+### 📄 Documents
+| Method | Endpoint |
+|------|---------|
+| POST | `/documents/upload` |
+| GET | `/documents` |
+| GET | `/documents/{id}/download` |
+| DELETE | `/documents/{id}` |
 
 ---
 
@@ -254,66 +263,3 @@ Submit PR
 
 📄 License
 MIT License
-
-
-
-==================================================================================================
-
-Frontend
-
-# 🖥️ Smart Book Management System — Frontend (React + TypeScript)
-
-This is the **production-ready React frontend** for the **Smart Book Management System with Agentic RAG**.  
-The UI enables user authentication, document management, ingestion monitoring, and a **Q&A interface powered by a Retrieval-Augmented Generation (RAG) backend**.
-
-The frontend is designed with **scalability, modularity, performance, and maintainability** as first-class concerns.
-
----
-
-## 🎯 Purpose
-
-The frontend provides a **clean, responsive, and modular user interface** to interact with backend services for:
-
-- User authentication & role-based access
-- Book and document management
-- Ingestion monitoring
-- Semantic search & Q&A using RAG
-- Admin user management
-
----
-
-## 🧱 Tech Stack
-
-### Core
-- **React 18**
-- **TypeScript**
-- **Vite** (fast build & dev server)
-- **React Router v6**
-
-### State & Data
-- **React Query (TanStack Query)** – async API state
-- **Axios** – HTTP client
-- **JWT-based authentication**
-
-### UI & Styling
-- **Tailwind CSS**
-- **Headless UI / Radix UI**
-- **Responsive & accessible design**
-
-### Testing
-- **Jest**
-- **React Testing Library**
-- **MSW (Mock Service Worker)**
-
-### Performance & Quality
-- Code-splitting & lazy loading
-- Lighthouse / PageSpeed optimized (90%+ target)
-- ESLint + Prettier
-- Strict TypeScript mode
-
----
-
-## 📂 Project Structure
-
-
-
